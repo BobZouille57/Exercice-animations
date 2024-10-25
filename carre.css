@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+}
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: rotateColor 5s infinite linear;
+  }
+  
+  @keyframes rotateColor {
+    0% {
+      transform: rotate(0deg);
+      background-color: red;
+    }
+    50% {
+      transform: rotate(180deg);
+      background-color: blue;
+    }
+    100% {
+      transform: rotate(360deg);
+      background-color: red;
+    }
+  }
+  
